@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+h1 {
+    margin: 0;
+  }
+  
+nav {
+    background-color: #333;
+    padding: 20px;
+  }
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+nav ul li a:hover {
+    background-color: gray;
+    color: #fff;
+  }
+  
+main {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+h2 {
+    margin-top: 0;
+  }
+  
+ul.catalog {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+ul.catalog li {
+    margin-bottom: 10px;
+  }
+  
+ul.catalog li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+ul.catalog li a:hover {
+    text-decoration: underline;
+  }
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+footer p {
+    margin: 0;
+  }
+
+.news {
+    margin-top: 20px;
+  }
+  
+article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+h3 {
+    margin: 0;
+  }
+  
+p {
+    margin-top: 5px;
+  }
+
+.news article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .news article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .news article h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .news article p {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+
+@media (min-width: 601px) {
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .header, .content, .footer {
+      width: 100%;
+    }
+    
+    .header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+.marquee {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+  }
